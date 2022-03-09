@@ -6,5 +6,9 @@
 ## Assignments
 
 ### Module 2
-* [Assignment description](./assignments/Assignment-2.md)
-* [Solution] [Source](./Week2Module2Solution/) [WebPage](https://mohamedelfal.github.io/Coursera-course-HTML-CSS-and-Javascript-for-Web-Developers/Week2Module2Solution/index.html)
+* Assignment:
+   * [Assignment description](./assignments/Assignment-2.md)
+* Solution:
+   * [Source](./Week2Module2Solution/) 
+   * [WebPage](https://mohamedelfal.github.io/Coursera-course-HTML-CSS-and-Javascript-for-Web-Developers/Week2Module2Solution/index.html)
+###
