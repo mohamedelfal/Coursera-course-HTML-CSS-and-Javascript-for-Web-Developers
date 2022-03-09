@@ -10,6 +10,7 @@ body {
 h1 {
     text-align: center;
     color: black;
+    background-color: #a9b5d456;
 }
 
 section {
@@ -32,17 +33,17 @@ section>h2 {
     padding-top: 10px;
 }
 
-section.lebesgue>h2 {
-    background-color: #76b8db;
+section.mother>h2 {
+    background-color: #08ceff;
 }
 
-section.fubini>h2 {
-    background-color: #4f7acd;
+section.quiet>h2 {
+    background-color: #0dffc3;
 }
 
-section.luzin>h2 {
+section.icome>h2 {
     color: #e2e2e2;
-    background-color: #10328a;
+    background-color: #cd60ff;
 }
 
 section>p {
