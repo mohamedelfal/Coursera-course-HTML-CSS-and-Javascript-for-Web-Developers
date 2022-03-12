@@ -1,142 +1,82 @@
-<!doctype html>
+<!DOCTYPE >
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Module 3 Assignment</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-	<header>
-		<nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
-			<div class="container">
-				<div class="navbar-brand">
-					<a href="index.html">
-						<h1>Food, LLC</h1>
-					</a>
-				</div>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <div id="food">
+        FOOD, LLC
+      </div> 
+           <!-- Navigation starts as empty UL that will be populated with JS -->
+        <!-- Start of Responsive integrate Icon -->
+        <div id="integrate" class="mobile-btn">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      <ul id="navbar__list"  class="mobile__nav toggle-show"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Our Menu</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Chicken" class="your-active-class">
+      <div class="landing__container">
+        <h2>Chicken</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Beef" >
+      <div class="landing__container">
+        <h2>Beef</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
-				<div id="navbarSupportedContent" class="collapse navbar-collapse">
-					<ul id="nav-list" class="navbar-nav mr-auto d-lg-none">
-						<li class="nav-item active">
-							<a class="nav-link text-center" href="#chicken">Chicken</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-center" href="#beef">Beef</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-center" href="#sushi">Sushi</a>
-						</li>
-					</ul>
-				</div><!-- .collapse .navbar-collapse -->
-			</div><!-- .container -->
-		</nav><!-- .navbar-->
-	</header>
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Sushi" >
+      <div class="landing__container">
+        <h2>Sushi</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
-	<div id="main-content" class="container">
-		<h2 id="page-title" class="text-center">Our Menu</h2>
-		<div id="main-text">
-			<h3 id="chicken">Chicken</h3>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-				Aenean
-				massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-				Donec
-				quam
-				felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-				Donec
-				pede
-				justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-				a,venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
-				dapibus.Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-				porttitor
-				eu,
-				consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
-				tellus.Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
-				ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-				Maecenas
-				tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit adipiscing sem neque sed
-				ipsum.
-				Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-				tincidunt
-				tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci
-				eget
-				eros
-				faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
-				Sed
-				consequat, leo eget bibendum sodales, augue velit cursus nunc.
-			</p>
-			<h3 id="beef">Beef</h3>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-				Aenean
-				massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-				Donec
-				quam
-				felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-				Donec
-				pede
-				justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-				a,venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
-				dapibus.Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-				porttitor
-				eu,
-				consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
-				tellus.Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
-				ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-				Maecenas
-				tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit adipiscing sem neque sed
-				ipsum.
-				Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-				tincidunt
-				tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci
-				eget
-				eros
-				faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
-				Sed
-				consequat, leo eget bibendum sodales, augue velit cursus nunc.
-			</p>
-			<h3 id="sushi">Sushi</h3>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-				Aenean
-				massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-				Donec
-				quam
-				felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-				Donec
-				pede
-				justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-				a,venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
-				dapibus.Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-				porttitor
-				eu,
-				consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
-				tellus.Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
-				ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-				Maecenas
-				tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit adipiscing sem neque sed
-				ipsum.
-				Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-				tincidunt
-				tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci
-				eget
-				eros
-				faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
-				Sed
-				consequat, leo eget bibendum sodales, augue velit cursus nunc.
-			</p>
-		</div>
-	</div>
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+      </div>
+    </section>
+    <!-- Creat New Section -->
+    <section id="section4" data-nav="Ice Cream" >
+      <div class="landing__container">
+        <h2>Ice Cream</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
-	<script src="js/jquery-3.3.1.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+  
+  <div class="scroll-top">
+    <a class="scroll-top-link" href="#">&#8593;</a>
+  </div>
+   <!-- JavaScript file -->
+   <script src="./js/app.js"></script>
 </body>
-
 </html>
