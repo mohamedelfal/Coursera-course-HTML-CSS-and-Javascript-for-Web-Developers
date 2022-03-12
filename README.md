@@ -23,6 +23,6 @@
 * Assignment:
    * <a href="./assignments/Assignment-4/Assignment-4.md" target="_blank">Assignment description</a>
 * Solution:
-   * [Source](./week-3-module-4-solution/)
-   * [WebPage](https://mohamedelfal.github.io/Coursera-course-HTML-CSS-and-Javascript-for-Web-Developers/week-3-module-4-solution/index.html)
+   * [Source](./week-4-module-4-solution/)
+   * [WebPage](https://mohamedelfal.github.io/Coursera-course-HTML-CSS-and-Javascript-for-Web-Developers/week-4-module-4-solution/index.html)
 
