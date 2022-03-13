@@ -6,7 +6,7 @@
 * [Course Peer-graded Assignments](#Course-Peer-graded-Assignments)
  * [Module 2](#Module-2)
   * [Assignment: Module 2 Coding Assignment](#Module-2-Coding-Assignment)
-  * [Solution: Module 2 Solution ](#Solution:Module-2-Solution)
+  * [Solution: Module 2 Solution ](#Solution:-Module-2-Solution)
  * [Module 3](#Module-3)
   * [Assignment: Module 3 Coding Assignment](#Assignment:Module-3-Coding-Assignment)
   * [Solution: Module 3 Solution ](#Solution:Module-3-Solution)
