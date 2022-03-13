@@ -9,7 +9,7 @@
   * [Solution: Module 2 Solution ](#Solution-Module-2-Solution)
  * [Module 3](#Module-3)
   * [Assignment: Module 3 Coding Assignment](#assignment-module-3-coding-assignment)
-  * [Solution: Module 3 Solution ](#Solution-Module-3-Solution)
+  * [Solution: Module 3 Solution ](#solution--module-3-solution-)
  * [Module 4](#Module-4)
   * [Assignment: Module 4 Coding Assignment](#assignment-module-4-coding-assignment)
   * [Solution: Module 4 Solution ](#Solution-Module-4-Solution)
