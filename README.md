@@ -336,3 +336,7 @@ Repeat this several times to make sure that most of the time you see a different
 >>* ## Solution:<br> <a href="./week-5-module5-solution/" target="_blank">Module 5 Solution</a>
 >>>* ## [Source](./week-5-module5-solution/)
 >>>* ## [WebPage](https://mohamedelfal.github.io/Coursera-course-HTML-CSS-and-Javascript-for-Web-Developers/week-5-module5-solution/index.html)
+<br><br>
+
+# GRADUATED
+![GRADUATED](././assignments/Assignment-3/images/K45UHGYVVAQP.jpg)
