@@ -5,7 +5,7 @@
 # TABLE OF CONTENT
 * [Course Peer-graded Assignments](#Course-Peer-graded-Assignments)
  * [Module 2](#Module-2)
-  * [Assignment: Module 2 Coding Assignment](#Assignment:Module-2-Coding-Assignment)
+  * [Assignment: Module 2 Coding Assignment](#Module-2-Coding-Assignment)
   * [Solution: Module 2 Solution ](#Solution:Module-2-Solution)
  * [Module 3](#Module-3)
   * [Assignment: Module 3 Coding Assignment](#Assignment:Module-3-Coding-Assignment)
@@ -18,7 +18,7 @@
   * [Solution: Module 5 Solution ](#Solution:Module-5-Solution)
   
 > # Course Peer-graded Assignments
->>* solutions to the assignments of the [Course](#Coursera-Course)
+>>* solutions to the assignments of the [Course](https://www.coursera.org/learn/html-css-javascript-for-web-developers)
 
 
 >* # Module 2
