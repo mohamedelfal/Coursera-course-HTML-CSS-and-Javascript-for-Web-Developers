@@ -16,7 +16,8 @@
  * [Module 5](#Module-5)
   * [Assignment: Module 5 Coding Assignment](#assignment--module-5-coding-assignment-)
   * [Solution: Module 5 Solution ](#Solution-Module-5-Solution)
-  
+ * [GRADUATED](#GRADUATED)
+
 > # Course Peer-graded Assignments
 >>* solutions to the assignments of the [Course](https://www.coursera.org/learn/html-css-javascript-for-web-developers)
 
@@ -338,5 +339,5 @@ Repeat this several times to make sure that most of the time you see a different
 >>>* ## [WebPage](https://mohamedelfal.github.io/Coursera-course-HTML-CSS-and-Javascript-for-Web-Developers/week-5-module5-solution/index.html)
 <br><br>
 
-# GRADUATED
-![GRADUATED](././assignments/Assignment-3/images/K45UHGYVVAQP.jpg)
+# [GRADUATED](https://www.coursera.org/account/accomplishments/certificate/K45UHGYVVAQP)
+[![GRADUATED](././assignments/images/K45UHGYVVAQP.jpg)](https://www.coursera.org/account/accomplishments/certificate/K45UHGYVVAQP)
