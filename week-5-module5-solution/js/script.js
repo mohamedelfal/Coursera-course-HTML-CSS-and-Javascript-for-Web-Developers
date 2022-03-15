@@ -321,7 +321,7 @@ function insertItemPrice(html,
     return insertProperty(html, pricePropName, "");
   }
 
-  priceValue = "$" + priceValue.toFixed(2);
+  priceValue = "LE" + priceValue.toFixed(2);
   html = insertProperty(html, pricePropName, priceValue);
   return html;
 }
