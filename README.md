@@ -2,7 +2,7 @@
  by [The Johns Hopkins University](https://www.coursera.org/jhu)<br>[![JHU Logo](././assignments/images/JHU-Logo-Square-Mini_180px.png)](https://www.coursera.org/jhu)<br>
 
 
-# TABLE OF CONTENT
+# TABLE OF CONTENTS
 * [Course Peer-graded Assignments](#Course-Peer-graded-Assignments)
  * [Module 2](#Module-2)
   * [Assignment: Module 2 Coding Assignment](#assignment-module-2-coding-assignment)
